@@ -1,25 +1,15 @@
 'use client'
-import { motion, useInView } from 'framer-motion';
 import dynamic from 'next/dynamic';
-import { useRef } from 'react';
 import { VscDebugBreakpointData } from "react-icons/vsc";
 
 
 const BuildCV = dynamic(()=> import('@/components/BuildCv'))
 const Home = () => {
 
-    const ref = useRef<HTMLDivElement>(null);
-
-    // `useInView` hook to check if the element is in view
-    const isInView = useInView(ref, { once: true });
+  
 
   return (
-    <motion.div
-    ref={ref}
-    initial={{ opacity: 0, y: 50 }} 
-    animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}  
-    transition={{ duration: 1.0, ease: 'easeOut' }}
-    className="">
+    
         <div className='flex flex-col justify-center items-center gap-2'>
             <div className="flex flex-col w-full lg:flex-row justify-center items-center p-6 mt-4  ">
                 <section className="flex flex-col justify-center items-start gap-6">
@@ -56,7 +46,7 @@ const Home = () => {
             <BuildCV/>
 
         </div>
-    </motion.div>
+    
   )
 }
 

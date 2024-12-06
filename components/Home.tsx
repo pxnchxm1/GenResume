@@ -3,9 +3,9 @@ import { FaCheck } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center p-2 px-6 mt-6">
+    <div className="flex flex-col w-full lg:flex-row justify-center items-center p-6 mt-6 bg-gradient-to-br hover:bg-gradient-to-r from-slate-900 dark:from-cyan-800 dark:to-slate-900 to-cyan-800  ">
         <section className="flex flex-col justify-center items-start gap-6">
-            <div className="text-md md:text-2xl lg:text-3xl font-bold">
+            <div className="text-xl md:text-3xl lg:text-4xl text-white font-bold">
                 Craft Your Future with the  
                 <span className="text-cyan-600"> Perfect </span>
                 Resume
@@ -13,7 +13,7 @@ const Home = () => {
             <section className="lg:hidden ">
                 <img src='/resume.png' alt="resume" className="h-52 w-52 p-2"></img>
             </section>
-            <section className="flex flex-col gap-2 items-start justify-start text-[0.7rem] md:text-[0.85rem]  font-normal text-cyan-600">
+            <section className="flex  flex-col gap-2 items-start justify-start text-[0.7rem] md:text-[0.85rem]  font-normalhover:bg-gradient-to-r bg-gradient-to-l from-slate-800 via-gray-200 to-cyan-600 dark:to-white bg-clip-text text-transparent">
                     <div className="gap-2 flex flex-row items-center justify-center ">
                         <FaCheck className="text-green-700"/><div>Build the Resume That Opens Doors.</div>
                     </div>

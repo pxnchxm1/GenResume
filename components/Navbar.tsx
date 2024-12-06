@@ -14,7 +14,7 @@ const AppLogo = dynamic(() => import('@/components/AppLogo'))
 const Navbar = () => {
     const [menu,setMenu] = useState<boolean>(false);
     return (
-        <div className='px-4 py-3 flex flex-row items-center w-full justify-between shadow-md dark:shadow-sm dark:shadow-cyan-600'>
+        <div className='p-4 flex flex-row items-center w-full justify-between shadow-md dark:shadow-sm dark:shadow-cyan-600'>
             <AppLogo/>
             <div className='hidden md:flex flex-row gap-2 justify-between items-center'>
                 <ThemeToggler/>
